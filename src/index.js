@@ -29,5 +29,5 @@ function create (){
   debugger
 }
 
-//colocando ela no jogo
+//colocando config no jogo
 new Phaser.Game(config);
