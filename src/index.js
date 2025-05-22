@@ -1,28 +1,33 @@
 
+//Importando o phasher
 import Phaser from "phaser";
 
+//criando a variavel de configuração do jogo
 const config = {
+  //webGL(biblioteca graficos web) JS api para renderizar jogos 2d e 3d
   type: Phaser.AUTO,
   width: 800,
   height: 600,
   physics: {
-    default: 'arcade',
-    arcade: {
-      gravity: { y: 200 }
-    }
+    //arcade biblioteca que gerencia simulações físicas
+    default: 'arcade'
   },
   scene: {
-    preload: preload,
-    create: create
+    preCarregamento,
+    create,
   }
-};
+}
 
+//carregando assets(imagens, muisca e animações)
+function preCarregamento (){
+  //cena
+  debugger
+}
+
+// Função para configurar e criar os objetos do jogo
+function create (){
+  debugger
+}
+
+//colocando ela no jogo
 new Phaser.Game(config);
-
-function preload () {
-  this.load.image('sky', 'assets/sky.png');
-}
-
-function create () {
-  this.add.image(400, 300, 'sky');
-}
